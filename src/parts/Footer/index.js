@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="w-1/6">
           <h6 className="text-white">Touch Us</h6>
           <p className="mt-4 text-indigo-600 leading-loose">
-            Micro Centre <br />
+            LearningIt Centre <br />
             Alleysi Block X No. 12 <br />
             Jakarta Selatan, Indonesia <br />
             +21 2020 5555
@@ -36,9 +36,7 @@ export default function Footer() {
         </div>
         <div className="w-2/6">
           <h6 className="text-white">Promotions</h6>
-          <p className="mt-4 text-indigo-600 leading-loose">
-            Submit your email for new updates
-          </p>
+          <p className="mt-4 text-indigo-600 leading-loose">Submit your email for new updates</p>
           <form onSubmit={submit}>
             <input
               type="email"
@@ -55,9 +53,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t pt-8 mt-8 border-indigo-1000 text-center">
-        <p className="text-indigo-600">
-          2020 Copyright LearningIt by Indraawagin. All Rights Reserved.
-        </p>
+        <p className="text-indigo-600">2022 Copyright LearningIt. All Rights Reserved.</p>
       </div>
     </footer>
   );
