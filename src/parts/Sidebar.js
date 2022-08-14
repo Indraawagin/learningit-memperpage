@@ -6,7 +6,7 @@ import users from "src/constans/api/users";
 
 function Sidebar({ match, history }) {
   const getNavLinkClass = (path) => {
-    return match.pathname === path ? "active text-white bg-indigo-900" : "text-indigo-500";
+    return match.path === path ? "active text-white bg-indigo-900" : "text-indigo-500";
   };
 
   const USERS = useSelector((state) => state.users);
@@ -38,7 +38,7 @@ function Sidebar({ match, history }) {
           <li>
             <Link
               className={[
-                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white active:text-white focus:outline-none w-full text-left",
+                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white w-full text-left",
                 getNavLinkClass("/"),
               ].join(" ")}
               to="/"
@@ -51,7 +51,7 @@ function Sidebar({ match, history }) {
               target="_black"
               rel="noopener noreferrer"
               className={[
-                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white active:text-white focus:outline-none w-full text-left",
+                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white w-full text-left",
                 getNavLinkClass("/library"),
               ].join(" ")}
               href={`${process.env.REACT_APP_FRONTPAGE_URL}/courses`}
@@ -62,7 +62,7 @@ function Sidebar({ match, history }) {
           <li>
             <Link
               className={[
-                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white active:text-white focus:outline-none w-full text-left",
+                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white w-full text-left",
                 getNavLinkClass("/transactions"),
               ].join(" ")}
               to="/transactions"
@@ -73,7 +73,7 @@ function Sidebar({ match, history }) {
           <li>
             <Link
               className={[
-                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white active:text-white focus:outline-none w-full text-left",
+                "nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white w-full text-left",
                 getNavLinkClass("/settings"),
               ].join(" ")}
               to="/settings"
@@ -86,7 +86,7 @@ function Sidebar({ match, history }) {
         <ul className="main-menu mt-12">
           <li>
             <button
-              className="nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white active:text-white focus:outline-none w-full text-left text-indigo-500"
+              className="nav-link relative flex items-center py-3 px-5 transition-all duration-200 hover:text-white w-full text-left text-indigo-500"
               onClick={logout}
             >
               Log Out
