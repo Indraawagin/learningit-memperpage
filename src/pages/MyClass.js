@@ -23,7 +23,7 @@ function EmptyState() {
           target="_blank"
           rel="noopener noreferrer"
           className="bg-orange-500 hover:bg-orange-400 transition-all duration-200 focus:outline-none shadow-inner text-white px-6 py-3 mt-5"
-          href={`${process.env.REACT_APP_FRONTPAGE_URL}/library`}
+          href={`${process.env.REACT_APP_FRONTPAGE_URL}/courses`}
         >
           Cari Kelas
         </a>

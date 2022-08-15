@@ -14,27 +14,27 @@ const initialState = {
   message: "",
 };
 
-export default function (state = initialState, props) {
-  switch (props.type) {
+export default function (state = initialState, action) {
+  switch (action.type) {
     case STATUS_COURSES:
       return {
         ...state,
-        status: props.payload,
+        status: action.payload,
       };
     case FETCH_COURSES:
       return {
         ...state,
-        data: props.payload?.reduce?.((acc, item) => {
+        data: action.payload?.reduce?.((acc, item) => {
           acc[item.course_id] = item;
           return acc;
         }, {}),
-        total: props.payload.length ?? 0,
+        total: action.payload.length ?? 0,
         status: "ok",
       };
     case MESSAGE_COURSE:
       return {
         ...state,
-        message: props.payload,
+        message: action.payload,
         status: "error",
       };
 
@@ -43,9 +43,9 @@ export default function (state = initialState, props) {
         ...state,
         data: {
           ...state.data,
-          [props.payload.id]: {
-            ...state.data[props.payload.id],
-            ...props.payload,
+          [action.payload.id]: {
+            ...state.data[action.payload.id],
+            ...action.payload,
           },
         },
         status: "ok",

@@ -3,10 +3,10 @@ import { POPULATE_PROFILE } from "src/constans/types/users";
 
 const initialState = null;
 
-export default function (state = initialState, props) {
-  switch (props.type) {
+export default function (state = initialState, action) {
+  switch (action.type) {
     case POPULATE_PROFILE:
-      return props.payload;
+      return action.payload;
     default:
       return state;
   }

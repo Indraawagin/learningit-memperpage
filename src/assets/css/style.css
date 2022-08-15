@@ -706,6 +706,15 @@ svg#svg-star{
 .w-full{
   width: 100%;
 }
+.w-auto{
+  width: auto;
+}
+.w-3\/12{
+  width: 25%;
+}
+.w-2\/12{
+  width: 16.666667%;
+}
 .w-1\/4{
   width: 25%;
 }
@@ -714,9 +723,6 @@ svg#svg-star{
 }
 .w-5\/12{
   width: 41.666667%;
-}
-.w-auto{
-  width: auto;
 }
 .w-24{
   width: 6rem;
@@ -732,12 +738,6 @@ svg#svg-star{
 }
 .w-1\/2{
   width: 50%;
-}
-.w-3\/12{
-  width: 25%;
-}
-.w-2\/12{
-  width: 16.666667%;
 }
 .max-w-3xl{
   max-width: 48rem;
@@ -872,6 +872,14 @@ svg#svg-star{
 .bg-indigo-800{
   --tw-bg-opacity: 1;
   background-color: rgb(55 48 163 / var(--tw-bg-opacity));
+}
+.bg-orange-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+}
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 240 250 / var(--tw-bg-opacity));
 }
 .fill-indigo-500{
   fill: #6366f1;
@@ -1062,6 +1070,16 @@ svg#svg-star{
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-orange-300:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-300:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .hover\:text-teal-500:hover{
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
@@ -1084,11 +1102,6 @@ svg#svg-star{
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.active\:text-white:active{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){

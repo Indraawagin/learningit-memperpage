@@ -6,7 +6,6 @@ import { Link, withRouter } from "react-router-dom";
 
 function Header({ onLight, location }) {
   const linkColor = onLight ? "text-gray-900" : "text-white";
-  console.log(location);
   const linkCTA = location.pathname.indexOf("/login") > -1 ? `/register` : `/login`;
   const textCTA = location.pathname.indexOf("/login") > -1 ? "Daftar" : "Masuk";
 

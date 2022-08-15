@@ -3,7 +3,6 @@ import { Route, Redirect, withRouter } from "react-router-dom";
 
 const MemberRoute = ({ component: Component, match, path, location, ...rest }) => {
   const ok = localStorage.getItem("LEARNINGIT:token");
-  console.log(rest);
   localStorage.removeItem("LEARNINGIT:redirect");
 
   return (
