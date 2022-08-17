@@ -22,9 +22,10 @@ export default function Joined({ history, match }) {
         setState({ isLoading: false, isError: false, data: details });
       }
     } catch (error) {
-      console.log("error", error);
+      if (error?.response?.data?.message === "user already take this course")
+        history.push(`/courses/${match.params.class}`);
     }
-  }, [match.params.class]);
+  }, [history, match.params.class]);
 
   useEffect(() => {
     joining();
