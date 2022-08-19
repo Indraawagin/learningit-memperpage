@@ -22,7 +22,7 @@ export default function Joined({ history, match }) {
         setState({ isLoading: false, isError: false, data: details });
       }
     } catch (error) {
-      if (error?.response?.data?.message === "user already take this course")
+      if (error?.response?.data?.message === "user already taken this course")
         history.push(`/courses/${match.params.class}`);
     }
   }, [history, match.params.class]);
