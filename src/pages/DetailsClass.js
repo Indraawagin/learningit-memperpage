@@ -43,7 +43,6 @@ function DetailsClass({ match, history }) {
       currentChapter?.lessons[0];
   }
 
-  console.log(match.params.class, currentChapter, currentLesson);
   function nextVideo() {}
 
   return (
